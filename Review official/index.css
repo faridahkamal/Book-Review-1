@@ -1,0 +1,197 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Asap", sans-serif;
+    background-color: #C9ADA7;
+}
+* {
+    box-sizing: border-box;
+}
+@font-face {font-family: TitleFont;
+src: url(font/LittleMiracles-d9xV7.ttf);
+}
+@font-face {font-family: RegFont;
+src: url(font/oswald/Oswald-Light.ttf);
+}
+@font-face {font-family: GenB;
+src: url(font/Gentium-Basic/GenBkBasB.ttf);
+}
+@font-face {font-family: Gen;
+src: url(font/Gentium-Basic/GenBasR.ttf);
+}
+h1 {
+    font-size: 90px;
+    padding: 0px;
+    margin: 0px;
+    font-family: TitleFont;
+    color: #07393C;
+}
+a{
+  font-family: RegFont;
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px;
+  color: #4A4E69;
+}
+img{object-fit: contain;
+width:120px;
+height:auto;
+border-bottom-left-radius: 5px;
+border-top-left-radius: 5px;
+}
+#head {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.info{
+  width: 100%;
+  height: 40px;
+  background-color: #9A8C98;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+#site-header{
+  width: 100%;
+  height: 150px;
+  background-color: #C9ADA7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#site-header a {
+  text-decoration: none;
+}
+.donuts{
+  width: 100%;
+  height: 40px;
+  background-color: #C9ADA7;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  color: #4A4E69;
+}
+#site-nav{
+  background-color: #C9ADA7;
+  /* margin-top: 0px;
+  padding-top: 0px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+}
+li{
+  float: left;
+}
+li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #221E22;
+}
+/* li a:hover:not(.active){
+  text-decoration: underline;
+  color: #FFD447;
+} */
+/* Add an "active" class to the current link to let the user know which page he/she is on */
+.active {
+  background-color: #7C7C7C;
+  border-radius: 7px;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #7C7C7C;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #7C7C7C;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.container{
+  width: 100%;
+  height: 150px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:3px solid #07393C;
+}
+.books{
+  height: 100%;
+  width: 100%;
+  background-color: #4A4E69;
+}
+/* Book designs*/
+.containeer{
+  background-color: #4A4E69;
+  border:1px solid #07393C;
+}
+.container-title{
+  font-size: 90px;
+}
+.book-row{
+  background-color: #C9ADA7;
+  overflow-x: scroll;
+  display: flex;
+
+}
+.book-case{
+  height: 330px;
+  margin: 30px;
+}
+.book-image{
+ max-height: 200px;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book-image:hover{
+    box-shadow: 0px 20px 250px 15px #07393C;
+}
+img{
+  height: 200px;
+  width: auto;
+}
+.book-title{
+  font-family: GenB;
+  font-size: 22px;
+  padding: 0px;
+  margin: 0px;
+  color: #4A4E69;
+  text-align: center;
+
+}
+.book-author{
+  font-family: Gen;
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+  color: #4A4E69;
+  text-align: center;
+}
